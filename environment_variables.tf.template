@@ -1,0 +1,28 @@
+# Environment Variables Template
+# Copy this file to environment_variables.tf and fill in your actual values
+
+variable "dynatrace_nonprod_url" {
+  type        = string
+  description = "Dynatrace Non-Production environment URL"
+  # Example: "https://your-environment.live.dynatrace.com"
+}
+
+variable "dynatrace_nonprod_api_token" {
+  type        = string
+  description = "Dynatrace Non-Production API token with configuration permissions"
+  sensitive   = true
+  # Get this from Dynatrace: Settings > Integration > Dynatrace API
+}
+
+variable "dynatrace_prod_url" {
+  type        = string
+  description = "Dynatrace Production environment URL"
+  # Example: "https://your-prod-environment.live.dynatrace.com"
+}
+
+variable "dynatrace_prod_api_token" {
+  type        = string
+  description = "Dynatrace Production API token with configuration permissions"
+  sensitive   = true
+  # Get this from Dynatrace: Settings > Integration > Dynatrace API
+}

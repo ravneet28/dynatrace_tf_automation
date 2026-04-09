@@ -1,0 +1,29 @@
+# Terraform Variables Template
+# Copy this file to terraform.tfvars and fill in your actual values
+# This file contains example configurations - modify according to your needs
+
+# Non-Production Environment Variables
+dynatrace_nonprod_url       = "https://your-nonprod-environment.live.dynatrace.com"
+dynatrace_nonprod_api_token = "your-nonprod-api-token-here"
+
+# Production Environment Variables
+dynatrace_prod_url       = "https://your-prod-environment.live.dynatrace.com"
+dynatrace_prod_api_token = "your-prod-api-token-here"
+
+# Management Zone Variables
+# Copy and modify the dyantrace_mgmt_zone_variables structure from variables.tf
+dyantrace_mgmt_zone_variables = {
+  # Add your management zone configurations here
+}
+
+# Web Application Variables
+# Copy and modify the dynatrace_web_application_variables structure from variables.tf
+dynatrace_web_application_variables = {
+  # Add your web application configurations here
+}
+
+# Application Detection Rule Variables
+# Copy and modify the application_detection_rule_variables structure from variables.tf
+application_detection_rule_variables = {
+  # Add your application detection rule configurations here
+}
